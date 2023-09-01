@@ -7,6 +7,7 @@
     <title>Coding Event</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
     <script>
         tailwind.config = {
             theme: {
@@ -37,13 +38,13 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-row bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 items-center justify-center">
+    <div class="flex flex-row  items-center justify-center bg-slate-50">
         <div class="p-8">
             <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row">
                 <div class="md:w-full p-4 flex items-center justify-center">
                     <div>
-                        <h2 class="text-3xl font-semibold text-white mb-4 text-center">Event Name</h2>
-                        <p class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                        <h2 class="text-3xl font-semibold text-center mb-4 text-black">Event Name</h2>
+                        <p class="text-black text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                             aliquet ex in tincidunt. Phasellus sit amet justo et felis consectetur ultrices eget nec
                             nulla. Sed vehicula massa at lectus luctus, eu tristique justo fermentum. In hac habitasse
                             platea dictumst. Proin id mi id purus vestibulum feugiat a at nulla. Curabitur sit amet quam
@@ -56,6 +57,38 @@
             </div>
         </div>
     </div>
+<!--Tabs-->
+<div class="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-10">
+    <h2 class="text-3xl font-semibold text-center ">Event Details</h2>
+</div>
+<div class="tabset">
+    <!-- Tab 1 -->
+    <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+    <label for="tab1">Round 1</label>
+    <!-- Tab 2 -->
+    <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+    <label for="tab2">Round 2</label>
+    <!-- Tab 3 -->
+    <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+    <label for="tab3">Round 3</label>
+    
+    <div class="tab-panels">
+      <section id="marzen" class="tab-panel">
+        <h2>Round 1 Details</h2>
+        <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
+    </section>
+      <section id="rauchbier" class="tab-panel">
+        <h2>Round 2 Details</h2>
+        <p><strong>Overall Impression:</strong>  An elegant, malty German amber lager with a balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor, restrained bitterness, low to high smoke flavor, clean fermentation profile, and an attenuated finish are characteristic.</p>
+      </section>
+      <section id="dunkles" class="tab-panel">
+        <h2>Round 3 Details</h2>
+        <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.</p>
+      </section>
+    </div>
+    
+  </div>
+<!--Timeline-->
     <main class="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden">
 
         <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-18">
@@ -86,7 +119,7 @@
                     <!-- Item #2 -->
                     <div class="relative pl-8 sm:pl-32 py-6 group">
                         <!-- Purple label -->
-                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The milestone</div>
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">Registrations closed</div>
                         <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
                         <div
                             class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
@@ -94,17 +127,17 @@
                                 class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">16
                                 Sep,
                                 2023</time>
-                            <div class="text-xl font-bold text-slate-900">Reached 5K customers</div>
+                            <div class="text-xl font-bold text-slate-900">No more registrations will be taken more.</div>
                         </div>
                         <!-- Content -->
-                        <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                        <div class="text-slate-500">
                             Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
                     </div>
 
                     <!-- Item #3 -->
                     <div class="relative pl-8 sm:pl-32 py-6 group">
                         <!-- Purple label -->
-                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The acquisitions
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">Event Day
                         </div>
                         <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
                         <div
@@ -113,18 +146,17 @@
                                 class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">18
                                 Sep,
                                 2023</time>
-                            <div class="text-xl font-bold text-slate-900">Acquired various companies, inluding
-                                Technology Inc.</div>
+                            <div class="text-xl font-bold text-slate-900">Opening ceremony of the event</div>
                         </div>
                         <!-- Content -->
                         <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
                             Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
                     </div>
-
                     <!-- Item #4 -->
                     <div class="relative pl-8 sm:pl-32 py-6 group">
                         <!-- Purple label -->
-                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The IPO</div>
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">Round 1
+                        </div>
                         <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
                         <div
                             class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
@@ -132,18 +164,35 @@
                                 class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">18
                                 Sep,
                                 2023</time>
-                            <div class="text-xl font-bold text-slate-900">Acme went public at the New York Stock
-                                Exchange</div>
+                            <div class="text-xl font-bold text-slate-900">I Qualification Round</div>
+                        </div>
+                        <!-- Content -->
+                        <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                            Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+                    </div>
+                    
+                    <!-- Item #5 -->
+                    <div class="relative pl-8 sm:pl-32 py-6 group">
+                        <!-- Purple label -->
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">Round 2</div>
+                        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                        <div
+                            class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                            <time
+                                class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">18
+                                Sep,
+                                2023</time>
+                            <div class="text-xl font-bold text-slate-900">II Qualifier round to get into finale</div>
                         </div>
                         <!-- Content -->
                         <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
                             Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
                     </div>
 
-                    <!-- Item #5 -->
+                    <!-- Item #6 -->
                     <div class="relative pl-8 sm:pl-32 py-6 group">
                         <!-- Purple label -->
-                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The acquisitions
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The Finale
                         </div>
                         <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
                         <div
@@ -152,17 +201,16 @@
                                 class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">19
                                 Sep,
                                 2023</time>
-                            <div class="text-xl font-bold text-slate-900">Acquired various companies, inluding
-                                Technology Inc.</div>
+                            <div class="text-xl font-bold text-slate-900">Final Screening round through online</div>
                         </div>
                         <!-- Content -->
                         <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
                             Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
                     </div>
-                    <!-- Item #6 -->
+                    <!-- Item #7 -->
                     <div class="relative pl-8 sm:pl-32 py-6 group">
                         <!-- Purple label -->
-                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The acquisitions
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The Conclusion
                         </div>
                         <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
                         <div
@@ -171,8 +219,7 @@
                                 class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">19
                                 Sep,
                                 2023</time>
-                            <div class="text-xl font-bold text-slate-900">Acquired various companies, inluding
-                                Technology Inc.</div>
+                            <div class="text-xl font-bold text-slate-900">Announcement of winners and price distribution</div>
                         </div>
                         <!-- Content -->
                         <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
@@ -185,13 +232,314 @@
         </div>
     </main>
 
+<!--Team-->
 
 
-
-
-
+<div class="responsive-container-block container">
+    <p class="text-blk team-head-text">
+      Faculty Members
+    </p>
+    <div class="responsive-container-block">
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+              </div>
+              <p class="text-blk name">
+                Dr. K. Sivaji Babu
+              </p>
+              <p class="text-blk position">
+                Principal, PVPSIT
+              </p>
+              
+              
+            </div>
+          </div>
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Dr. A. Jayalakshmi
+          </p>
+          <p class="text-blk position">
+            HOD, Department of CSE
+          </p>
+        </div>
+      </div>
+      
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png">
+          </div>
+          <p class="text-blk name">
+            Dr. M. V. Ramakrishna
+          </p>
+          <p class="text-blk position">
+            Sponsor
+          </p>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png">
+          </div>
+          <p class="text-blk name">
+            Dr. J. Ramadevi
+          </p>
+          <p class="text-blk position">
+            Faculty Coordinator
+          </p>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png">
+          </div>
+          <p class="text-blk name">
+            Ms. T. Sri Lakshmi
+          </p>
+          <p class="text-blk position">
+            Faculty Coordinator
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="responsive-container-block container">
+    <p class="text-blk team-head-text">
+      Student Members
+    </p>
+    <div class="responsive-container-block">
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Pavithra Sai Kadiyala
+          </p>
+          <p class="text-blk position">
+            Chair
+          </p>
+          
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png">
+          </div>
+          <p class="text-blk name">
+            Gogudesi Venkataraju
+          </p>
+          <p class="text-blk position">
+            Vice Chair
+          </p>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png">
+          </div>
+          <p class="text-blk name">
+            Narayana Teja
+          </p>
+          <p class="text-blk position">
+            Treasurer
+          </p>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Vamsi Saripudi
+          </p>
+          <p class="text-blk position">
+            Web Master
+          </p>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Yaswant Sai kavuri 
+          </p>
+          <p class="text-blk position">
+            Secretary
+          </p>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Sahiti Lavu
+          </p>
+          <p class="text-blk position">
+            Membership Chair
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row  items-center justify-center bg-slate-50">
+    <div class="p-8">
+        <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row">
+            <div class="md:w-full p-4 flex items-center justify-center">
+                <div>
+                    <h2 class="text-3xl font-semibold text-center mb-4 text-black">Contact Us</h2>
+                    <p class="text-black text-center"><strong>Pavithra Sai Kadiyala:</strong>+91 8919258725</p>
+                    <p class="text-black text-center"><strong>Gogudesi Venkataraju:</strong>+91 9704683257</p>
+                    <p class="text-black text-center"><strong>Narayana Teja:</strong>+91 6300655083</p>
+                    <p class="text-black text-center"><strong>Yaswant Sai kavuri:</strong>+91 7893990556</p>
+                    <p class="text-black text-center"><strong>Sahiti Lavu:</strong>+91 9866017333</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <style>
+    * {
+        font-family: Nunito, sans-serif;
+      }
+      
+      .responsive-cell-block {
+        min-height: 75px;
+      }
+      
+      .text-blk {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        line-height: 25px;
+      }
+      
+      .responsive-container-block {
+        min-height: 75px;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        justify-content: space-evenly;
+      }
+      
+      .team-head-text {
+        font-size: 48px;
+        font-weight: 900;
+        text-align: center;
+      }
+      
+      .team-head-text {
+        line-height: 50px;
+        width: 100%;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+      }
+      
+      .container {
+        max-width: 1380px;
+        margin-top: 60px;
+        margin-right: auto;
+        margin-bottom: 60px;
+        margin-left: auto;
+        padding-top: 0px;
+        padding-right: 30px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+      }
+      
+      .card {
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-right: 25px;
+        padding-bottom: 30px;
+        padding-left: 25px;
+      }
+      
+      .card-container {
+        width: 280px;
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+      }
+      
+      .name {
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        font-size: 18px;
+        font-weight: 800;
+      }
+      
+      .position {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+      }
+      
+      .feature-text {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        color: rgb(122, 122, 122);
+        line-height: 30px;
+      }
+      
+      .social-icons {
+        width: 70px;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .team-image-wrapper {
+        clip-path: circle(50% at 50% 50%);
+        width: 130px;
+        height: 130px;
+      }
+      
+      .team-member-image {
+        max-width: 100%;
+      }
+      
+      @media (max-width: 500px) {
+        .card-container {
+          width: 100%;
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-bottom: 25px;
+          margin-left: 0px;
+        }
+      }
     header h1 {
         font-size: 70px;
         font-weight: 600;
@@ -201,6 +549,102 @@
         -webkit-background-clip: text;
         text-align: center;
     }
+    /*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+  }
+  
+  .tabset .tab-panel {
+    display: none;
+  }
+  
+  .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+  .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+  .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+  .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    display: block;
+  }
+  
+  /*
+   Styling
+  */
+
+  
+  .tabset > label {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .tabset > label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
+  }
+  
+  input:focus-visible + label {
+    outline: 2px solid rgba(0,102,204,1);
+    border-radius: 3px;
+  }
+  
+  .tabset > label:hover,
+  .tabset > input:focus + label,
+  .tabset > input:checked + label {
+    color: #06c;
+  }
+  
+  .tabset > label:hover::after,
+  .tabset > input:focus + label::after,
+  .tabset > input:checked + label::after {
+    background: #06c;
+  }
+  
+  .tabset > input:checked + label {
+    border-color: #ccc;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+  }
+  
+  .tab-panel {
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  /*
+   Demo purposes only
+  */
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgb(248 250 252);
+  }
+  .tabset {
+    max-width: 65em;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(248 250 252);
+  }
 </style>
 
 </html>
