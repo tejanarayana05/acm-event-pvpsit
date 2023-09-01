@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Event</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        caveat: ['Caveat', 'cursive'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="relative font-inter antialiased">
+
+
+
+    <div class="relative">
+        <img src="/acm-coding.png" alt="Background Image" class="w-full">
+        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <div class="text-white text-center">
+                <h1 class="text-4xl font-bold mb-4">Coding Event</h1>
+                <p class="text-lg mb-8">By ACM Student Chapter, PVPSIT</p>
+                <a href="https://forms.gle/4N2Xa7RFLqx8wmFEA" target="_blank"
+                    class="px-6 py-3 bg-transparent text-white text-center font-semibold rounded rounded-3xl bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">Register
+                    Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 items-center justify-center">
+        <div class="p-8">
+            <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row">
+                <div class="md:w-full p-4 flex items-center justify-center">
+                    <div>
+                        <h2 class="text-3xl font-semibold text-white mb-4 text-center">Event Name</h2>
+                        <p class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                            aliquet ex in tincidunt. Phasellus sit amet justo et felis consectetur ultrices eget nec
+                            nulla. Sed vehicula massa at lectus luctus, eu tristique justo fermentum. In hac habitasse
+                            platea dictumst. Proin id mi id purus vestibulum feugiat a at nulla. Curabitur sit amet quam
+                            eu orci condimentum dictum a ac arcu. In venenatis nisl vel mauris dictum, a fermentum enim
+                            hendrerit. Vivamus facilisis, orci nec malesuada laoreet, ante est consequat sem, ut
+                            tristique ex augue nec libero. Integer fermentum odio non quam ultrices, vel ullamcorper
+                            justo viverra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden">
+
+        <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-18">
+            <div class="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-10">
+                <h2 class="text-3xl font-semibold text-center ">Timeline</h2>
+
+                <div class="w-full max-w-3xl mx-auto">
+
+                    <!-- Vertical Timeline #1 -->
+                    <!-- Item #1 -->
+                    <div class="relative pl-8 sm:pl-32 py-6 group">
+                        <!-- Purple label -->
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">Registrations Open</div>
+                        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                        <div
+                            class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                            <time
+                                class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">4
+                                Sep,
+                                2023</time>
+                            <div class="text-xl font-bold text-slate-900">Event details forwarded through mails and whatsapp</div>
+                        </div>
+                        <!-- Content -->
+                        <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                            Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+                    </div>
+
+                    <!-- Item #2 -->
+                    <div class="relative pl-8 sm:pl-32 py-6 group">
+                        <!-- Purple label -->
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The milestone</div>
+                        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                        <div
+                            class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                            <time
+                                class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">16
+                                Sep,
+                                2023</time>
+                            <div class="text-xl font-bold text-slate-900">Reached 5K customers</div>
+                        </div>
+                        <!-- Content -->
+                        <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                            Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+                    </div>
+
+                    <!-- Item #3 -->
+                    <div class="relative pl-8 sm:pl-32 py-6 group">
+                        <!-- Purple label -->
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The acquisitions
+                        </div>
+                        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                        <div
+                            class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                            <time
+                                class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">18
+                                Sep,
+                                2023</time>
+                            <div class="text-xl font-bold text-slate-900">Acquired various companies, inluding
+                                Technology Inc.</div>
+                        </div>
+                        <!-- Content -->
+                        <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                            Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+                    </div>
+
+                    <!-- Item #4 -->
+                    <div class="relative pl-8 sm:pl-32 py-6 group">
+                        <!-- Purple label -->
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The IPO</div>
+                        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                        <div
+                            class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                            <time
+                                class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">18
+                                Sep,
+                                2023</time>
+                            <div class="text-xl font-bold text-slate-900">Acme went public at the New York Stock
+                                Exchange</div>
+                        </div>
+                        <!-- Content -->
+                        <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                            Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+                    </div>
+
+                    <!-- Item #5 -->
+                    <div class="relative pl-8 sm:pl-32 py-6 group">
+                        <!-- Purple label -->
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The acquisitions
+                        </div>
+                        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                        <div
+                            class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                            <time
+                                class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">19
+                                Sep,
+                                2023</time>
+                            <div class="text-xl font-bold text-slate-900">Acquired various companies, inluding
+                                Technology Inc.</div>
+                        </div>
+                        <!-- Content -->
+                        <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                            Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+                    </div>
+                    <!-- Item #6 -->
+                    <div class="relative pl-8 sm:pl-32 py-6 group">
+                        <!-- Purple label -->
+                        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The acquisitions
+                        </div>
+                        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                        <div
+                            class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                            <time
+                                class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">19
+                                Sep,
+                                2023</time>
+                            <div class="text-xl font-bold text-slate-900">Acquired various companies, inluding
+                                Technology Inc.</div>
+                        </div>
+                        <!-- Content -->
+                        <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                            Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+
+
+
+
+
+</body>
+<style>
+    header h1 {
+        font-size: 70px;
+        font-weight: 600;
+        background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-align: center;
+    }
+</style>
+
+</html>
